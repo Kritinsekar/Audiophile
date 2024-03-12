@@ -1,0 +1,1499 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+:root{
+    --primary-color:#D87D4A;
+    --primary-color-light:#FBAF85;
+    --secondary-color:#101010;
+    --third-color:#F1F1F1;
+    --third-color-light:#FAFAFA;
+    --white:white;
+    --black:black;
+
+}
+
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+*::selection{
+   background-color: var(--primary-color); 
+   color:var(--black);
+}
+
+html{
+    font-size:62.5%;
+    font-family: 'Manrope', sans-serif;
+}
+
+body{
+    background-color:var(--third-color-light);
+    position:relative;
+    overflow-x: hidden;
+}
+
+
+/***********************/
+/*******COMMON**********/
+/***********************/
+
+svg{
+    cursor: pointer;
+}
+
+section{
+    width:100%;
+    padding:0rem 10rem;
+}
+
+footer{
+    width:100%;
+    padding:2rem 20rem;
+}
+
+.removelinkstyles{
+    text-decoration: none;
+    color:var(--white);
+}
+
+/***********************/
+/*******HERO*******/
+/***********************/
+
+.section1{
+    background-image: url("./assets/home/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height:100vh;
+    border-bottom-right-radius: .7rem;   
+    border-bottom-left-radius: .7rem;
+    padding:10rem 0 0 0 ;   
+}
+
+.mainheader{
+    padding:0rem 20rem;
+    width:100%;
+    height:10vh;
+    color:var(--white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position:absolute;
+    top:0;
+    z-index:10;
+    background-color:transparent;
+}
+
+.logo{
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+}
+.links h6{
+    font-size: 1.4rem;
+    margin:0 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.section1 hr{
+    width:100%;
+    background-color: var(--third-color-light);
+    opacity: 0.3;
+    height:.2rem;
+    margin:1rem 0;
+}
+
+.section1contents{
+    width:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    height: 85vh;
+    padding:0rem 10rem;
+
+}
+.section1contents h6{
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    color:var(--white);
+}
+.section1contents h2{
+    color:var(--white);
+    margin:1rem 0 5rem 0;
+    font-size:7rem;
+    font-weight:700;
+    letter-spacing: 0.2rem;
+    word-spacing: .5rem;
+}
+.section1contents h5{
+    color:var(--white);
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    opacity: 0.8;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 600;
+}
+
+.section1seeproduct{
+    background-color: var(--primary-color);
+    color:white;
+    text-transform: uppercase;
+    margin:10rem 0 0 0;
+    padding:1.5rem 3rem;
+    font-weight: 700;
+    border:none;
+    border-radius: .1rem;
+    cursor: pointer;
+    border-radius: .4rem;
+}
+
+/***********************/
+/*******SECTION 2*******/
+/***********************/
+
+.section2{
+    display: flex;
+    justify-content: space-between;
+    margin:0 0 15rem 0;
+}
+
+.section2card{
+    width:45rem;
+    height:30rem;
+    position: relative;
+    margin:20rem 0 5rem 0;
+    background-color: var(--third-color);
+    text-align: center;
+    border-radius: .5rem;
+    display:flex;
+    align-items: end;
+    justify-content: center;
+}
+
+.section2cardimage{
+    width:25rem;
+    position: absolute;
+    top:-10.5rem;
+    left:50%;
+    transform: translateX(-50%);
+    filter: drop-shadow(-1rem 1rem .5rem rgb(112, 112, 112));
+}
+
+.s2contentdiv{
+    margin:0 0 3rem 0;
+}
+
+.s2paradiv{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.section2card h3{
+    font-size:1.7rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    margin:0 0 2rem 0;
+    cursor: default;
+}
+
+.section2card h6{
+    font-size:1.2rem;
+    text-transform: uppercase;
+    opacity: .5;
+    letter-spacing: .2rem;
+    margin:0rem 1rem 0 0;
+    cursor: pointer;
+}
+
+.shoplink{
+    color:var(--black);
+    text-decoration: none;
+}
+/***********************/
+/*******SECTION 3*******/
+/***********************/
+.section3{
+    margin:0 0 15rem 0;
+}
+
+/*****S3 CARD 1*****/
+
+.section3card1{
+    width:100%;
+    padding:5rem 0;
+    height:70vh;
+    margin:10rem 0 3rem 0;
+    background-color: var(--primary-color);
+    overflow: hidden;
+    position: relative;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="944" height="944"><g stroke="%23FFF" fill="none" fill-rule="evenodd" opacity=".202"><circle cx="472" cy="472" r="235.5"/><circle cx="472" cy="472" r="270.5"/><circle cx="472" cy="472" r="471.5"/></g></svg>');
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: end;
+    border-radius: .8rem;
+      
+}
+
+.section3image{
+    width:80rem;
+    position: absolute;
+    left:7rem;
+    bottom:-25rem;
+      
+}
+
+.s3texts{
+    width:50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    height: 85vh;
+    padding:0rem 0rem 0 10rem;
+    margin:0 0rem 0 10rem;
+}
+
+
+.s3texts h2{
+    color:var(--white);
+    margin:1rem 0 5rem 0;
+    font-size:7rem;
+    font-weight:700;
+    letter-spacing: 0.2rem;
+    word-spacing: .5rem;
+    margin:7rem 0 3rem 0;
+}
+.s3texts h5{
+    color:var(--white);
+    font-size: 1.4rem;
+    line-height: 2.5rem;
+    opacity: 0.9;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+.s3button{
+    background-color: var(--black);
+    color:white;
+    text-transform: uppercase;
+    margin:8rem 0 0 0;
+    padding:1.7rem 4rem;
+    font-weight:800;
+    border:none;
+    border-radius: .1rem;
+    cursor: pointer;
+    letter-spacing: 0.2rem;
+    word-spacing: .2rem;
+    border-radius: .4rem;
+    
+}
+
+/*****S3 CARD 2*****/
+
+
+.section3card2{
+    background-image: url("./assets/home/desktop/image-speaker-zx7.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    width:100%;
+    height:45vh;
+    margin:0rem 0 3rem 0;
+    border-radius: .8rem;
+    padding:0 9rem;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+}
+
+.s3card2text{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start;
+}
+
+.s3card2text h3{
+    font-size:4rem;
+    font-weight:700;
+    margin:5rem 0 0 0;
+    letter-spacing: 0.2rem;
+    word-spacing: .5rem;
+}
+
+.s3subproduct{
+    border-width:.14rem;
+    border-color:var(--black);
+    letter-spacing: 0.2rem;
+    word-spacing: .2rem;
+    padding:1.7rem 4rem;
+    font-weight:800;
+    background-color: transparent;
+    margin:5rem 0;
+    cursor:pointer;
+    border-radius: .4rem;
+}
+
+/*****S3 CARD 3*****/
+
+.section3card3{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.subcard3{
+    width:38vw;
+    height:30vh;
+    margin:0 0 5rem 0;
+    border-radius: .8rem;
+}
+
+.s3subcard1{
+    background-image: url("./assets/home/desktop/image-earphones-yx1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+.s3subcard2{
+    padding:0 0 0 10rem;
+    background-color: var(--third-color);
+}
+
+.s3subcard2 h3{
+    font-size:4rem;
+    font-weight:700;
+    margin:5rem 0 0 0;
+    letter-spacing: 0.2rem;
+    word-spacing: .5rem;
+}
+
+/***********************/
+/*******SECTION 4*******/
+/***********************/
+.section4{
+    margin:0 0 10rem 0;
+}
+
+.section4container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.s4subcontainer{
+    width:38vw;
+    height:80vh;
+    margin:0 0 5rem 0;
+    border-radius: .8rem;
+}
+
+.s4subcontainer1{
+    display: flex;
+    align-items: center;
+    justify-content:start;
+}
+
+.s4subcontainer2{
+    background-image:url("./assets/shared/desktop/image-best-gear.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.s4subcontainer1 h2{
+    color:var(--black);
+    margin:1rem 0 5rem 0;
+    font-size:5rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+    margin:7rem 0 5rem 0;
+}
+.s4subcontainer1 h2 span{
+    color:var(--primary-color);
+}
+
+.s4subcontainer1 h5{
+    color:var(--black);
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+}
+
+/***********************/
+/*******FOOTER*******/
+/***********************/
+
+.footer1{
+    width:100%;
+    padding:5rem 20rem;
+    background-color: var(--secondary-color);
+}
+
+.footerlinks{
+    display: flex;
+    color:var(--third-color);
+}
+.footerlinks h6{
+    font-size: 1.4rem;
+    margin:0 2rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+.footerheader1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footerheader2{
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.footerheader2 h5{
+    color:var(--third-color);
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    opacity: 0.5;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 400;
+    margin:4rem 0;
+}
+
+.socialicons{
+    margin:0 2rem;
+}
+
+.copyright{
+    color:var(--third-color);
+    font-size: 1.5rem;
+    line-height: 2.8rem;
+    opacity: 0.6;
+    text-transform: capitalize;
+    letter-spacing: .1rem;
+    font-weight: 700;
+    margin:5rem 0;
+}
+
+
+/***********************/
+/*******SUBBERS*******/
+/***********************/
+/***********************/
+/*******COMMON*******/
+/***********************/
+
+.heading{
+    font-size: 2.5rem;
+    color:var(--white);
+    margin-top:5rem;
+    letter-spacing: .2rem;
+}
+
+
+/***********************/
+/*******HEADPHONES*******/
+/***********************/
+.headphonesheadertab{                           /*NEEDED FOR CLONING*/
+    position:relative;
+    border-bottom-right-radius: .7rem;   
+    border-bottom-left-radius: .7rem;
+    padding:10rem 0 7rem 0 ;   
+    background-color: var(--black);
+    display: flex;
+    justify-content: center;
+
+}
+
+.headphonesection{                             /*NEEDED FOR CLONING*/
+    margin:5rem 0;
+}
+
+.headphonesectioncardcontainer{               /*NEEDED FOR CLONING*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding:0 10rem;
+    margin:10rem 0;
+}
+
+.headphonesectioncard{
+    width:30vw;
+    height:50vh;
+}
+
+.headphonesectionimgcard1{
+    background-image: url("./assets/product-xx99-mark-two-headphones/desktop/image-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .8rem;
+
+}
+
+.headphonesectiontextcard1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 3rem;
+
+}
+
+.headphonesectiontextcard1 h2{
+    color:var(--black);
+    margin:1rem 0 4rem 0;
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+}
+
+.headphonesectiontextcard1 h6{
+    margin:1rem 0;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    color:var(--primary-color);
+}
+
+.headphonesectiontextcard1 h5{
+    color:var(--black);
+    font-size: 1.5rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    margin:0rem 0 5rem 0;
+    line-height: 3rem;
+}
+
+.headphonesectiontextcardbutton{
+    border:none;
+    color:var(--white);
+    letter-spacing: 0.2rem;
+    word-spacing: .2rem;
+    padding:1.7rem 4rem;
+    font-weight:800;
+    background-color: var(--primary-color);
+    margin:0rem 0;
+    cursor:pointer;
+    border-radius: .4rem;
+}
+
+/* ROW 2 */
+
+.headphonesectionimgcard2{
+    background-image: url("./assets/product-xx99-mark-one-headphones/desktop/image-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .8rem;
+
+}
+
+/* ROW 3 */
+
+.headphonesectionimgcard3{
+    background-image: url("./assets/product-xx59-headphones/desktop/image-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .8rem;
+
+}
+
+
+/***********************/
+/*******SPEAKERS*******/
+/***********************/
+
+/* ROW 1 */
+
+.speakerssectionimgcard1{
+    background-image: url("./assets/product-zx9-speaker/desktop/image-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .8rem;
+
+}
+
+.speakerssectiontextcard1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 3rem;
+
+}
+
+
+.speakerssectiontextcard1 h2{
+    color:var(--black);
+    margin:1rem 0 4rem 0;
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+}
+
+.speakerssectiontextcard1 h6{
+    margin:1rem 0;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    color:var(--primary-color);
+}
+
+.speakerssectiontextcard1 h5{
+    color:var(--black);
+    font-size: 1.5rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    margin:0rem 0 5rem 0;
+    line-height: 3rem;
+}
+
+.speakerssectiontextcardbutton{
+    border:none;
+    color:var(--white);
+    letter-spacing: 0.2rem;
+    word-spacing: .2rem;
+    padding:1.7rem 4rem;
+    font-weight:800;
+    background-color: var(--primary-color);
+    margin:0rem 0;
+    cursor:pointer;
+    border-radius: .4rem;
+}
+
+/* ROW 2 */
+
+.speakerssectionimgcard2{
+    background-image: url("./assets/product-zx7-speaker/desktop/image-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .8rem;
+
+}
+
+
+/***********************/
+/*******earphones*******/
+/***********************/
+
+/* ROW 1 */
+
+.earphonessectionimgcard1{
+    background-image: url("./assets/product-yx1-earphones/desktop/image-product.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: .8rem;
+
+}
+
+.earphonessectiontextcard1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 3rem;
+
+}
+
+
+.earphonessectiontextcard1 h2{
+    color:var(--black);
+    margin:1rem 0 4rem 0;
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+}
+
+.earphonessectiontextcard1 h6{
+    margin:1rem 0;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    color:var(--primary-color);
+}
+
+.earphonessectiontextcard1 h5{
+    color:var(--black);
+    font-size: 1.5rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    margin:0rem 0 5rem 0;
+    line-height: 3rem;
+}
+
+.earphonessectiontextcardbutton{
+    border:none;
+    color:var(--white);
+    letter-spacing: 0.2rem;
+    word-spacing: .2rem;
+    padding:1.7rem 4rem;
+    font-weight:800;
+    background-color: var(--primary-color);
+    margin:0rem 0;
+    cursor:pointer;
+    border-radius: .4rem;
+}
+
+/***********************/
+/******PURCHASE PAGE****/
+/***********************/
+
+.purchaseheader{
+    height:10vh;
+    background-color: var(--black);
+}
+
+.productsection{
+    padding-top:5rem;
+}
+
+.goback{
+    font-size:1.3rem;
+    opacity:0.5;
+    margin:0 0 3rem 0;
+    cursor: pointer;
+    color:black;
+    text-decoration: none;
+}
+.gobacklink{
+    text-decoration: none;
+    color: var(--black);
+}
+
+.productcard{
+    width:100%;
+    height:65vh;
+    display: flex;
+    justify-content: space-between;
+    margin:1rem 0 10rem 0;
+}
+
+.productsubimgcard{
+    width:40vw;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.productmainimg{
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.productsubtextcard{
+    width:40vw;
+    height:100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0 10rem;
+}
+
+
+.productsubtextcardh2{
+    color:var(--black);
+    margin:1rem 0 4rem 0;
+    font-size:3rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+}
+
+.productsubtextcardh6{
+    margin:1rem 0;
+    letter-spacing: 1rem;
+    word-spacing: 1rem;
+    font-weight: 500;
+    opacity: 0.6;
+    font-size: 1.5rem;
+    color:var(--primary-color);
+}
+
+.productsubtextcardh5{
+    color:var(--black);
+    font-size: 1.5rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    margin:0rem 0 5rem 0;
+    line-height: 3rem;
+}
+
+.productsubtextcardbutton{
+    border:none;
+    color:var(--white);
+    letter-spacing: 0.2rem;
+    word-spacing: .2rem;
+    padding:1.4rem 2.5rem;
+    font-weight:600;
+    background-color: var(--primary-color);
+    margin:0rem 0;
+    cursor:pointer;
+    border-radius: .4rem;
+}
+
+.productprice{
+    color:var(--black);
+    margin:1rem 0 4rem 0;
+    font-size:1.8rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+}
+
+.productpurchasediv{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:35rem;
+    
+}
+
+.productcount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1.4rem 2.5rem;
+    width:15rem;
+    height:100%;
+    background-color: var(--third-color);
+    border-radius: .4rem;
+    font-size: 1.3rem;
+}
+
+.increasedecreasebutton{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    height:100%;
+    opacity: .5;
+}
+
+/* FEATURES */
+
+.featuressection{
+    display: flex;
+    justify-content: space-between;
+    width:100%;
+    margin:0rem 0 5rem 0;
+}
+
+.featuresleft{
+    width:43vw; 
+}
+
+.featuresright{
+    width:30vw;   
+}
+
+.featuressection h2{
+    color:var(--black);
+    margin:1rem 0 4rem 0;
+    font-size:2rem;
+    font-weight:700;
+    letter-spacing: 0.1rem;
+    word-spacing: .1rem;
+}
+
+.featuressection h5{
+    color:var(--black);
+    font-size: 1.5rem;
+    opacity: 0.7;
+    text-transform: capitalize;
+    letter-spacing: .2rem;
+    font-weight: 500;
+    margin:0rem 0 3rem 0;
+    line-height: 3rem;
+}
+
+.inboxrow{
+    display: flex;
+    
+}
+
+.inboxtext{
+    font-size:1.7rem;
+    color:var(--black);
+    opacity: 0.7;
+    font-weight: 500;
+    margin-top:1rem;
+    margin-bottom:2rem;
+}
+
+.inboxquantity{
+    margin-right: 2.5rem;
+    color:var(--primary-color) !important;
+    font-weight: 800 !important;
+    opacity: 1 !important;
+}
+
+.productimagescontainer{
+    height:65vh;
+    display: flex;
+    justify-content: space-between;
+}
+
+.productimagesleft{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width:45%;
+}
+
+.productimage1{
+    width:100%;
+    height:30rem;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .8rem;
+}
+
+
+.productimagesright{
+    width:50%;
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.productimage2{
+    width:100%;
+    height:100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: .8rem;
+}
+
+/***********************/
+/******CART****/
+/***********************/
+
+.cart{
+    padding:2rem 2rem;
+    min-height:15vh;
+    position: absolute;
+    background-color: white;
+    top:20rem;
+    right:3rem;
+    border-radius: .8rem;
+    transform: translateX(60rem);
+    transition: transform .5s;
+    z-index:3;
+}
+
+.showcart{
+    transform: translateX(0rem);
+    transition: all .5s;
+    
+}
+
+.cartempty{
+    text-align: center;
+    font-size:1.5rem;
+    margin:5rem;
+    word-spacing: .5rem;
+    opacity: .5;
+}
+.cartheader{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:0 0 1.5rem 0;
+    min-width:20rem;
+}
+
+.cartheader h3{
+    letter-spacing: .2rem;
+    font-size:1.5rem;
+}
+
+.cartheader h5{
+    color:var(--primary-color);
+    text-decoration: underline;
+    font-size:1.2rem;
+    cursor: pointer;
+}
+
+.cartrow{
+    width:35rem;
+    display: flex;
+    padding:1rem 0;
+    border-radius:.4rem;
+    align-items: center;
+    justify-content: space-between;
+    margin:2rem 0 0 0;
+}
+
+.cartitemimg{
+    width:7rem;
+    border-radius: .4rem;
+}
+
+.cartitemname{
+    font-size:1.5rem;
+}
+
+.cartitemprice{
+    font-size:1.2rem;
+    margin:.5rem 0 0 0;
+    opacity: .4;
+}
+.cartimageandtext{
+display: flex;
+align-items: center;
+}
+
+.cartimageandtext div{
+    margin:0 0 0 1.5rem;
+}
+
+.cartproductcount{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:1rem 1rem;
+    width:9rem;
+    height:100%;
+    background-color: var(--third-color);
+    border-radius: .4rem;
+    font-size: 1.3rem;
+}
+
+.cartincreasedecreasebutton{
+    background-color: transparent;
+    border:none;
+    cursor: pointer;
+    height:100%;
+    opacity: .5;
+}
+
+.cartcheckout{
+    display: flex;
+    flex-direction: column;
+    width:100%;
+    margin:3rem 0 0 0;
+}
+
+.carttotal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.checkout{
+    width:100%;
+    background-color: var(--primary-color);
+    color:white;
+    text-align: center;
+    font-size:1.5rem;
+    margin:2rem 0;
+    padding:2rem 0;
+    border:none;
+    border-radius: .4rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+/***********************/
+/******CHECKOUT*********/
+/***********************/
+
+
+.checkoutsection{
+    padding-top:3rem;
+    background-color: var(--third-color);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.checkoutgoback{
+    font-size:1.3rem;
+    opacity:0.5;
+    margin:3rem 0 2rem 0;
+    cursor: pointer;
+    color:var(--black);
+    margin:0 0 5rem 0;
+}
+
+
+/* MAIN CHECKOUT CONTAINER */
+
+.checkoutcontainermain{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.checkoutform{
+    /* border:2px solid black; */
+    padding:4rem;
+    width:65%;
+    background-color: var(--white);
+    border-radius: .8rem;
+}
+
+.checkouttext{
+    letter-spacing: .2rem;
+    color:black;
+    text-transform:uppercase;
+    font-size: 3rem;
+    margin:0 0 6rem 0;
+}
+
+.billingdetailstext{
+    color:var(--primary-color-light);
+    font-size:1.5rem;
+    text-transform: uppercase;
+    margin:0 0 3rem 0;
+}
+
+.formrow{
+    display: flex;
+    width:100%;
+    justify-content:space-between;
+    align-items: center;
+    margin: 0 0 1rem 0;
+}
+
+.singleform{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    margin:3rem 0rem 0 10rem;
+    width:35rem;
+    margin: 0 0 3rem 0;
+}
+
+.singleform label{
+    font-size:1.3rem;
+    color:var(--black);
+    font-weight: 600;
+    margin:0 0 1rem 0;
+    text-transform: capitalize;
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+}
+
+.forminput{
+    padding:1.5rem;
+    border-radius:.5rem;
+    border:1px solid grey;
+    color:rgb(100, 100, 100);
+    font-size:1.5rem;
+    width:100%;
+    color:rgb(105, 105, 105);
+}
+
+
+.forminput::placeholder{
+    opacity: .5;
+}
+
+.shipinfotext{
+    margin:7rem 0 0 0;
+}
+
+.shipinform{
+    margin:4rem 0 0 0;
+    width:100%;
+}
+
+.shippinformrow{
+    margin:4rem 0 0 0;
+}
+.paymentmethodcontainer{
+    width:100%;
+    display: flex;
+    justify-content: space-between;
+    margin:5rem 0 0 0;
+}
+.paymentmethodcontainer h3{
+    font-size:1.3rem;
+    color:var(--black);
+    font-weight: 600;
+    margin:0 0 1rem 0;
+    text-transform: capitalize;
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+}
+
+.modes{
+    padding:1.5rem;
+    width:35rem;
+    display: flex;
+    align-items: center;
+    border-radius:.5rem;
+    border:1px solid var(--primary-color);
+    color:rgb(100, 100, 100);
+    font-size:1.5rem;
+    color:rgb(105, 105, 105);
+    margin:2rem 0;
+}
+
+.modes h3{
+    font-size:1.3rem;
+    color:var(--black);
+    font-weight: 600;
+    margin:0 0 1rem 0;
+    text-transform: capitalize;
+    word-spacing: .3rem;
+    letter-spacing: .1rem;
+}
+
+.checkboxinput{
+    margin:0 2rem 0 1rem;
+}
+
+.paymentrow{
+    margin:4rem 0;
+}
+
+.checkoutheader{
+    background-color: var(--black);
+    height:10vh;
+    width:100%;
+}
+
+/* ********* */
+/* sidecart */
+/* ********* */
+
+.sidecart{
+    width:30%;
+    height:86rem;
+    display: flex;
+    flex-direction: column;
+    background-color:var(--white);
+    margin:0 0 0 5rem;
+    border-radius: .8rem;
+    padding:4rem 2rem;
+}
+
+.cartproductscount{
+    font-size: 1.7rem;
+    opacity: .4;
+}
+
+.summary{
+    font-size:2rem;
+    margin:0 0 1rem 0;
+}
+
+.checkoutcartitems{
+    width:100%;
+    height:35rem;
+    overflow-y:scroll;
+    margin:0 0 1rem 0;
+}
+
+.checkoutcartitems::-webkit-scrollbar{
+    width:.5rem;
+}
+
+.checkoutcartitems::-webkit-scrollbar-thumb{
+    background-color: var(--primary-color);
+    border-radius: .4rem;
+}
+
+.textrow{
+    display: flex;
+    justify-content: space-between;
+    margin:3rem 0 0rem 0;
+}
+
+.textrowfaded{
+    opacity:0.5;
+    font-size:2rem;
+}
+
+.textrowbold{
+    font-size:2rem;
+}
+
+.grandtotalprice{
+    color:var(--primary-color);
+}
+
+.continuepay{
+    background-color: var(--primary-color);
+    border-radius:.8rem;
+    width:100%;
+    padding:2rem 0;
+    border:none;
+    font-size:2rem;
+    text-align: center;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin:5rem 0 0 0;
+    color:var(--white);
+    cursor: pointer;
+}
+
+
+.notvalidtext{
+    color:red;
+    text-transform: capitalize;
+    margin:0 0 0 2rem;
+    display: none;
+}
+
+.displayerror{
+    display: inline;
+}
+
+/* ********* */
+/* MODAL */
+/* ********* */
+
+.modal{
+    position:absolute;
+    width:50%;
+    top:15%;
+    padding:2rem;
+    justify-self:center;
+    align-self: center;
+    background-color: var(--white);
+    border-radius:.8rem;
+    z-index:8;
+}
+
+.tickmark{
+    margin:0 0 3rem 0;
+}
+
+.thankyoutext{
+    margin-bottom: 1rem;
+    letter-spacing: .2rem;
+}
+
+.orderstatuscontainer{
+    display: flex;
+    background-color: var(--third-color);
+    border-radius: .4rem;
+}
+
+.orderstatus1{
+    width:60%;
+    height:18rem;
+}
+
+.orderstatus2{
+    width:40%;
+    height:18rem;
+    background-color: var(--black);
+    justify-content: start;
+    align-items: center;
+    padding:3rem;
+}
+
+.orderstatus2 h4{
+    opacity:0.6;
+    color:var(--white);
+    font-size:1.7rem;
+    word-spacing: .5rem;
+    letter-spacing: .3rem;
+    display: flex;
+    margin:0 0 2rem 0;
+}
+
+.orderstatus2 h3{
+    color:var(--white);
+    font-size:2.3rem;
+}
+
+.backtohome{
+    font-weight:600;
+    font-size:1.7rem;
+    letter-spacing: .4rem;
+    word-spacing: .5rem;
+}
+
+.orderstatuscard{
+    display: flex;
+    padding:2rem;
+    justify-content: center;
+    align-items: center;
+    border-bottom:.1rem solid grey;
+}
+
+.orderimage{
+    width:10rem;
+    border-radius:.4rem;
+    margin:0 3rem 0 0;
+}
+
+.orderdetailsrow{
+    display: flex;
+    justify-content: space-between;
+}
+
+.ordername{
+    margin:0 3rem 1rem 0;
+    font-size:1.5rem;
+}
+
+.orderquantity{
+    font-size:1.5rem;
+}
+
+.orderprice{
+    opacity:.6;
+    margin:0 0rem 1rem 0;
+}
+
+.otheritems{
+    text-align: center;
+    font-size: 1.3rem;
+    opacity:.7;
+    margin:1rem 0;
+}
+
+
